@@ -7,7 +7,7 @@ use crate::{context_manager::ContextInfo, order_manager::OrderSide};
 
 #[derive(Debug, Clone, PartialEq)]
 pub enum OrderType {
-    Market(Market),
+    Market(Market), 
     Limit(Limit),
 }
 
