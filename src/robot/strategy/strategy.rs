@@ -5,7 +5,7 @@ use std::hash::{Hash, Hasher};
 use crate::storage::{self, sensors::InfluxPoint};
 use crate::{context_manager::ContextInfo, order_manager::OrderSide};
 
-#[derive(Debug, Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq)] 
 pub enum OrderType {
     Market(Market), 
     Limit(Limit),
