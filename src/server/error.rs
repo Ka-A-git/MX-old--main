@@ -1,0 +1,3 @@
+#[derive(Debug)]
+enum ServerError {}
+

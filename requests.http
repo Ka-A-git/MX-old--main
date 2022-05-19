@@ -1,0 +1,70 @@
+
+@hostname = http://localhost
+@port = 8080
+@host = {{hostname}}:{{port}}
+
+
+#Platform
+###
+GET {{host}}/platform/status
+
+###
+POST {{host}}/platform/start HTTP/1.1
+
+###
+POST {{host}}/platform/stop HTTP/1.1
+
+###
+GET {{host}}/platform/info
+
+# Robot
+###
+@robot_name = Robot_Arbitration
+###
+POST {{host}}/robot/start/{{robot_name}}
+
+###
+POST {{host}}/robot/stop/{{robot_name}}
+
+###
+GET {{host}}/robot/status/{{robot_name}}
+
+###
+GET {{host}}/robot/info/{{robot_name}}
+
+###
+POST {{host}}/robot/set_config/{{robot_name}}
+
+###
+POST {{host}}/robot/up
+
+###
+GET {{host}}/robot/list
+
+# Gateway
+###
+@gateway_name = Huobi
+# @gateway_name = Binance
+
+###
+POST {{host}}/gateway/start/{{gateway_name}}
+
+###
+POST {{host}}/gateway/stop/{{gateway_name}}
+
+###
+GET {{host}}/gateway/status/{{gateway_name}}
+
+###
+GET {{host}}/gateway/info/{{gateway_name}}
+
+###
+POST {{host}}/gateway/set_config/{{gateway_name}}
+
+###
+POST {{host}}/gateway/up
+
+###
+GET {{host}}/gateway/list
+
+###
