@@ -1,7 +1,7 @@
 use crate::server::PLATFORM; 
 use tracing::info;
  
-pub struct RobotController;
+pub struct RobotController; 
 
 impl RobotController {
     pub fn start(robot_name: &str) -> String {
