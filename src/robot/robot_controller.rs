@@ -87,6 +87,6 @@ impl RobotController {
         match PLATFORM.environment.robot_environment.list_robots() {
             Ok(robots) => format!("Robot list:\n {:?}", robots.join("\n")),
             Err(error) => format!("{}", error),
-        }
+        } 
     }
 } 
