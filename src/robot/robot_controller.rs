@@ -28,7 +28,7 @@ impl RobotController {
             Ok(_) => format!("Robot {} has been stopped", robot_name),
             Err(error) => format!("{}", error),
         }
-    } 
+    }  
 
     pub fn status(robot_name: &str) -> String {
         info!("Get status of the {} robot", robot_name);
