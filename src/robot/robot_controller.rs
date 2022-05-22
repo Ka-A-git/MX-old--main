@@ -3,7 +3,7 @@ use tracing::info;
   
 pub struct RobotController; 
 
-impl RobotController {
+impl RobotController { 
     pub fn start(robot_name: &str) -> String {
         info!("Robot {} is starting...", robot_name);
 
