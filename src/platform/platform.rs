@@ -218,7 +218,7 @@ impl<'a> Platform {
             if gateway.status().unwrap() == GatewayStatus::Active {
                 gateway.stop()?;
             }
-        }
+        } 
 
         {
             let mut status_lock = self.status.write().unwrap();
