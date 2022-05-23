@@ -2,7 +2,7 @@ use super::metrics::Metrics;
 use super::utils::uppercase_first_letter;
 use super::{Environment, PlatformConfig, PLATFORM_CONFIG_FILE_PATH};
 use crate::{
-    context_manager::{ContextManager, ContextMsg, GatewayMsg},
+    context_manager::{ContextManager, ContextMsg, GatewayMsg}, 
     gateway::{GatewayEnvironment, GatewayStatus},
     order_manager::{ActiveOrderMsg, OrderManager, OrderMsg},
     robot::{RobotEnvironment, RobotStatus},
