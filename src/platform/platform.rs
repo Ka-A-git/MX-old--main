@@ -43,7 +43,7 @@ pub struct Platform {
 
 pub enum Status {
     Working,
-    Stopping,
+    Stopping, 
 }
 
 impl<'a> Platform {
