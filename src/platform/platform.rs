@@ -22,7 +22,7 @@ lazy_static! {
     pub static ref GATEWAY_TO_ROBOT_TIMES: Mutex<Vec<Duration>> = Mutex::new(Vec::new());
 }
 
-#[derive(Debug, EnumString, Display, PartialEq)]
+#[derive(Debug, EnumString, Display, PartialEq)] 
 pub enum PlatformStatus {
     Active,
     Stopped,
