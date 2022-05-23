@@ -76,7 +76,7 @@ impl<'a> Platform {
             Sender<OrderMsg>,
             Receiver<OrderMsg>,
         ) = unbounded();
-
+ 
         // Sending Orders from Order Manager to Gateways
         // Sender: Order Manager
         // Receiver: Gateways
