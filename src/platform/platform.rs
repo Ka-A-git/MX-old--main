@@ -15,7 +15,7 @@ use std::sync::Mutex;
 use std::time::Duration;
 use std::{collections::HashMap, sync::RwLock};
 use strum_macros::{Display, EnumString};
-use tracing::{debug, info};
+use tracing::{debug, info}; 
 
 lazy_static! {
     pub static ref ROBOT_TO_GATEWAY_TIMES: Mutex<Vec<Duration>> = Mutex::new(Vec::new());
