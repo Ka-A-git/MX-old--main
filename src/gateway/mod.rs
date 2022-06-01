@@ -1,7 +1,7 @@
 mod config;
 mod error;
 mod exchange;
-mod gateway;
+mod gateway; 
 mod gateway_controller;
 mod gateway_environment;
 mod gateway_params;
