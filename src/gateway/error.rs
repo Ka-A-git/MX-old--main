@@ -7,7 +7,7 @@ pub enum GatewayError {
     SellInstrumentError(SellInstrumentError),
     SetConfigError(SetConfigError),
 }
-
+ 
 #[derive(Debug)]
 pub enum GatewayStartError {
     GatewayIsNotStartedError,
