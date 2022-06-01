@@ -1,7 +1,7 @@
 #[derive(Debug)]
 pub enum GatewayError {
     GatewayStartError(GatewayStartError),
-    GatewayStopError(GatewayStopError),
+    GatewayStopError(GatewayStopError), 
     FetchBalanceError(FetchBalanceError),
     BuyInstrumentError(BuyInstrumentError),
     SellInstrumentError(SellInstrumentError),
